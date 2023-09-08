@@ -1,15 +1,8 @@
-@media only screen and (max-width: 452px) {
-    body {
-        -webkit-border-radius:0;
-        border-radius: 0;
-        height: 100%;
-        margin: 0;
-        max-width: unset;
-        padding: 0;
-        width: 50%
-    }
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
 #q{
     width: 600px;
     height: 45px;
@@ -163,4 +156,17 @@ span.grey {
     font-family: monospace;
     font-size: 11px;
     white-space: pre;
+}
+
+@media screen and (max-width: 1000px) {
+    div.s-head > div.c-main, div.rightbox > div.c-main {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    div.inputbox > div.field {
+        display: flex!important;
+        flex-shrink: 1!important;
+    }
 }
