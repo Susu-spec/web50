@@ -107,8 +107,142 @@ input:focus {
     margin: 0 1em;
 }
 
+.advancedlogo{
+    color: #d93025;
+    font-size: 1.3rem;
+    margin: .9rem 2.2rem;
+}
+
+.line {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.pagebox{
+    min-width: 200px;
+}
+
+.rectangle {
+    width: 100%;
+    clear: both;
+    margin: 1em 0;
+}
+
+.pageline {
+    clear: both;
+}
+
+
+.rectangle .c-head {
+    display: inline-block;
+    min-width: 167px;
+    font-weight: 500;
+    color: #333;
+    vertical-align: middle;
+}
+
+.c-main {
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.rectangle .space {
+    display: inline-block;
+    min-width: 167px;
+    min-height: 41px;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.rectangle .s-head {
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #777;
+    vertical-align: middle;
+}
+.rectangle .atw {
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    color: #222;
+    font-size: 13px;
+    line-height: 1.6rem;
+    vertical-align: middle;
+}
+
+.rectangle .inputbox {
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.rectangle .textinput input[type=text] {
+    width: 100%;
+    text-align: left;
+}
+.textinput {
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: .8rem;
+    padding: .06rem 1rem;
+    width: 95%;
+}
+
+.rectangle .rightbox {
+    float: left;
+    display: inline-block;
+    width: 25%;
+    min-width: 160px;
+    margin: 0 .2rem .5rem;
+    color: #555;
+    font-size: .7rem;
+    vertical-align: middle;
+    position: relative;
+}
+
+span.grey {
+    color: #666;
+    font-family: monospace;
+    font-size: .7rem;
+    white-space: pre;
+}
+
+.ad__input {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+
 @media only screen and (min-width: 600px) {
     #q {
         padding: .75em 8em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .s-head > .c-main, .rightbox > .c-main, .s-head {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .rectangle .atw {
+        min-width: 80px;
+        line-height: 1.6rem;
+    }
+
+    .inputbox {
+        margin-top: 1.4rem;
+    }
+
+    .rectangle .space, 
+    .rectangle .s-head {
+        display: none;
     }
 }
