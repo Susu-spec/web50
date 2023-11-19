@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <title>Advanced Search</title>
   <meta charset="utf-8">
@@ -19,19 +18,22 @@
   <main>
     <div class="pagebox container">
       <form action="https://google.com/search" id="request" method="GET" name="f">
-        <div class="rectangle">
-          <div class="pageline">
-            <div class="c-head">
-              <div class="c-main">
-                <span>Find pages with....</span>
+        <section>
+          <div class="rectangle">
+            <div class="pageline">
+              <div class="c-head">
+                <div class="c-main">
+                  <span>Find pages with....</span>
+                </div>
+              </div>
+              <div class="space">&nbsp;</div>
+              <div class="s-head">
+                <div class="c-main">To do this in the search box.</div>
               </div>
             </div>
-            <div class="space">&nbsp;</div>
-            <div class="s-head">
-              <div class="c-main">To do this in the search box.</div>
-            </div>
           </div>
-        </div>
+      </section>
+      <section>
         <div class="rectangle">
           <div class="pageline">
             <div class="atw">
@@ -108,8 +110,9 @@
         </div>
       </form>
     </div>
-
   </main>
+
+  
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     const atw_main = document.querySelector('input[name="q"]');
@@ -139,7 +142,7 @@
     ntw.addEventListener("keyup", function(event) {
       if (event.key === "Enter") {
         request.submit();
-      }aaaaaa
+      }
     });
   </script>
   </body>

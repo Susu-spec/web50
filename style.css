@@ -58,9 +58,8 @@ img {
 
 .nav__link:focus,
 .nav__link:hover {
-    opacity: .75;
-    background: #4285F4;
-    padding: .25em 1em;
+    opacity: 1;
+    padding: .25em .5em;
     border-radius: 100px;
 }
 
